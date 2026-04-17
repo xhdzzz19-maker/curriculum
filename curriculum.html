@@ -1,110 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Currículum Vitae</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0a3d62; /* fondo azul */
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>CV Moderno</title>
 
-        .contenedor {
-            width: 80%;
-            margin: 30px auto;
-            background: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0a3d62, #3c6382);
+}
 
-        .header {
-            background: #1e90ff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+.cv {
+    width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-        .seccion {
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
+/* LADO IZQUIERDO */
+.sidebar {
+    background: #1e3799;
+    color: white;
+    padding: 30px;
+}
 
-        .seccion h2 {
-            color: #1e90ff;
-            margin-bottom: 10px;
-        }
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 auto 20px;
+}
 
-        .datos {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
+.bloque {
+    margin-bottom: 30px;
+}
 
-        .datos p {
-            margin: 5px 0;
-        }
+.titulo {
+    height: 12px;
+    width: 70%;
+    background: #60a3bc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
 
-        .footer {
-            background: #1e90ff;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+.linea {
+    height: 8px;
+    background: #82ccdd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* LADO DERECHO */
+.contenido {
+    padding: 40px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.nombre {
+    height: 20px;
+    width: 60%;
+    background: #0a3d62;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.subtitulo {
+    height: 10px;
+    width: 40%;
+    background: #3c6382;
+    border-radius: 5px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.seccion .titulo {
+    width: 30%;
+    background: #0a3d62;
+}
+
+.card {
+    margin-top: 15px;
+}
+
+.card .linea {
+    background: #ccc;
+}
+
+</style>
 </head>
+
 <body>
 
-<div class="contenedor">
+<div class="cv">
 
-    <div class="header">
-        <h1>Tu Nombre Completo</h1>
-        <p>Profesión o especialidad</p>
-    </div>
+    <!-- IZQUIERDA -->
+    <div class="sidebar">
 
-    <div class="seccion">
-        <h2>Información Personal</h2>
-        <div class="datos">
-            <p><strong>Nombre:</strong> Tu nombre</p>
-            <p><strong>Edad:</strong> 00 años</p>
-            <p><strong>Teléfono:</strong> 000-000-0000</p>
-            <p><strong>Email:</strong> correo@email.com</p>
-            <p><strong>Dirección:</strong> Tu dirección</p>
-            <p><strong>Nacionalidad:</strong> Tu país</p>
+        <div class="foto"></div>
+
+        <div class="bloque">
+            <div class="titulo"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
         </div>
+
+        <div class="bloque">
+            <div class="titulo"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </div>
+
+        <div class="bloque">
+            <div class="titulo"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </div>
+
     </div>
 
-    <div class="seccion">
-        <h2>Perfil Profesional</h2>
-        <p>Escribe aquí una breve descripción sobre ti, tus habilidades y objetivos profesionales.</p>
-    </div>
+    <!-- DERECHA -->
+    <div class="contenido">
 
-    <div class="seccion">
-        <h2>Educación</h2>
-        <p><strong>Escuela/Universidad:</strong> Nombre</p>
-        <p><strong>Periodo:</strong> Año - Año</p>
-    </div>
+        <div class="header">
+            <div class="nombre"></div>
+            <div class="subtitulo"></div>
+        </div>
 
-    <div class="seccion">
-        <h2>Experiencia Laboral</h2>
-        <p><strong>Empresa:</strong> Nombre</p>
-        <p><strong>Puesto:</strong> Tu puesto</p>
-        <p><strong>Periodo:</strong> Año - Año</p>
-    </div>
+        <div class="seccion">
+            <div class="titulo"></div>
+            <div class="card">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+        </div>
 
-    <div class="seccion">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Habilidad 1</li>
-            <li>Habilidad 2</li>
-            <li>Habilidad 3</li>
-        </ul>
-    </div>
+        <div class="seccion">
+            <div class="titulo"></div>
+            <div class="card">
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+        </div>
 
-    <div class="footer">
-        <p>Currículum Vitae</p>
+        <div class="seccion">
+            <div class="titulo"></div>
+            <div class="card">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+        </div>
+
     </div>
 
 </div>
