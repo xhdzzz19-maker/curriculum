@@ -2,105 +2,104 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Currículum Vitae</title>
+<title>CV Ximena Hernández</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0a3d62, #3c6382);
+    background: #dcdcdc;
 }
 
 .cv {
     width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    grid-template-columns: 35% 65%;
+    background: #fff;
 }
 
-/* LADO IZQUIERDO */
+/* IZQUIERDA */
 .sidebar {
-    background: #1e3799;
-    color: white;
-    padding: 30px;
+    background: #d9a47f;
+    padding: 40px 30px;
+    position: relative;
+    color: #5a3e2b;
 }
 
-.foto {
-    width: 120px;
-    height: 120px;
+.foto-container {
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    background: #ccc;
-    margin: 0 auto 20px;
+    border: 8px solid #a44a3f;
+    overflow: hidden;
+    background: white;
 }
 
-.bloque {
-    margin-bottom: 30px;
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.titulo {
-    height: 12px;
-    width: 70%;
-    background: #60a3bc;
-    margin-bottom: 15px;
-    border-radius: 5px;
+h2 {
+    margin-top: 140px;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
-.linea {
-    height: 8px;
-    background: #82ccdd;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.texto {
+    margin-top: 20px;
+    line-height: 1.6;
 }
 
-/* LADO DERECHO */
+.contacto {
+    margin-top: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.icono {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* DERECHA */
 .contenido {
+    background: #e8e8e8;
     padding: 40px;
+    color: #5a3e2b;
 }
 
 .header {
+    background: #d8c0b2;
+    padding: 20px;
     margin-bottom: 30px;
 }
 
-.cv-titulo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0a3d62;
-    margin-bottom: 10px;
-}
-
 .nombre {
-    font-size: 20px;
-    font-weight: bold;
-    color: #1e3799;
-    margin-bottom: 8px;
-}
-
-.subtitulo {
-    height: 10px;
-    width: 40%;
-    background: #3c6382;
-    border-radius: 5px;
+    font-size: 48px;
+    font-weight: 500;
 }
 
 .seccion {
     margin-bottom: 30px;
 }
 
-.seccion .titulo {
-    width: 30%;
-    background: #0a3d62;
+.titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.card {
-    margin-top: 15px;
-}
-
-.card .linea {
-    background: #ccc;
+.lista {
+    line-height: 1.8;
 }
 
 </style>
@@ -113,26 +112,21 @@ body {
     <!-- IZQUIERDA -->
     <div class="sidebar">
 
-        <div class="foto"></div>
-
-        <div class="bloque">
-            <div class="titulo"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
+        <div class="foto-container">
+            <img src="tu-foto.jpg" alt="Foto">
         </div>
 
-        <div class="bloque">
-            <div class="titulo"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
+        <h2>SOBRE MI</h2>
+        <div class="texto">
+            Estudiante del nivel preparatoria<br>
+            Me considero una persona responsable, creativa, capaz de resolver problemas de forma efectiva e inteligente
         </div>
 
-        <div class="bloque">
-            <div class="titulo"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
-            <div class="linea"></div>
+        <h2>CONTACTO</h2>
+        <div class="contacto">
+            <div class="item"><span class="icono">📞</span> 712 209 2285</div>
+            <div class="item"><span class="icono">✉️</span> hernandezximenaelizabeth6@gmail.com</div>
+            <div class="item"><span class="icono">📍</span> Ixtlahuaca de Rayón</div>
         </div>
 
     </div>
@@ -141,34 +135,38 @@ body {
     <div class="contenido">
 
         <div class="header">
-            <div class="cv-titulo">Currículum Vitae</div>
             <div class="nombre">Ximena Hernández</div>
-            <div class="subtitulo"></div>
         </div>
 
         <div class="seccion">
-            <div class="titulo"></div>
-            <div class="card">
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
+            <div class="titulo">➤ Estudios</div>
+            <div class="lista">
+                Instituto Cultural Canadiense<br>
+                Secundaria (2020 - 2023)<br><br>
+
+                Instituto Cultural Canadiense<br>
+                Preparatoria (2023 - 2026)
             </div>
         </div>
 
         <div class="seccion">
-            <div class="titulo"></div>
-            <div class="card">
-                <div class="linea"></div>
-                <div class="linea"></div>
+            <div class="titulo">➤ Idioma</div>
+            <div class="lista">
+                Inglés Avanzado<br>
+                Francés básico<br>
+                Español nativo
             </div>
         </div>
 
         <div class="seccion">
-            <div class="titulo"></div>
-            <div class="card">
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
+            <div class="titulo">➤ Certificados</div>
+            <div class="lista">
+                Certificados Coursera<br>
+                "Álgebra básica"<br>
+                "Nutrición"<br>
+                "Modal Verbs"<br>
+                "Aprendiendo a aprender para jóvenes"<br>
+                "Trigonometría y geometría analítica"
             </div>
         </div>
 
